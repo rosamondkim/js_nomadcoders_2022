@@ -1,13 +1,50 @@
-
 body{
-
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin: 0 auto;
-
+    height: 100%;
 }
-
 .hidden {
     display: none;
+}
+.center {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#login-form{
+    margin-bottom: 50px;
+}
+#login-form input:first-child{
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    background-color: transparent;
+}
+
+#login-form input:last-child{
+    border: 0;  
+    background-color: rgba(0,0,0,0.1);
+    padding:10px;
+    border-radius: 20px;
+    
+
+
+}
+#logout{
+    width: 50px;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.01);
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 img {
@@ -22,8 +59,52 @@ img {
     z-index: -1;
 }
 
+#clock{
+    font-size: 100px;
+    font-weight: 900;
 
+}
+#todo-form input{
+    margin: auto;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    background-color: transparent;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
 #todo-list{
     list-style: none;
 }
+#todo-list li{
+    margin-bottom: 5px;
+   
+}
+#todo-list button{
+    text-align: center;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+}
 
+#weather{
+    position: fixed;
+    bottom: 100px;
+    width: 100%;
+}
+
+#weather span:first-child{
+    font-size: large;
+    font-weight: 700;
+}
+#quote{
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
+
+#quote span:first-child{
+    font-size: 20px;
+    font-weight: 700;
+}
